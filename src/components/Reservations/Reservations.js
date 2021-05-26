@@ -10,7 +10,8 @@ const Reservations = ({ reservations }) => {
       name= {reservation.name}
       date= {reservation.date}
       time= {reservation.time}
-      guests={reservation.number}
+      guests= {reservation.number}
+      id= {reservation.id}
       key= {reservation.id}
       />
     )
