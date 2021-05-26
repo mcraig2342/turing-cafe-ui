@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
+import { getReservations } from '../../api-calls'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      reservations: []
+      reservations: [],
+      error: '',
     }
+  }
+
+  componentDidMount() {
+    getReservations()
+    .then(currentReservations => {
+      this.setState({reservations: currentReservations})
+    })
+    .catch(error => this.setState({ error: 'Something went wrong!'}))
+  }
+
   }
 
   render() {
