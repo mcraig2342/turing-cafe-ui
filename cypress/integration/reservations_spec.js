@@ -22,7 +22,7 @@ describe('Reservations', () => {
       .should('contain', 'Matt')
       .and('contain', '3/24')
       .and('contain', '3:30')
-      .and('contain', 3)
+      .and('contain', 7)
   })
 
 });
