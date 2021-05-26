@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../Card/reservation-card.js';
+import Card from '../Card/Card.js';
 import './Reservations.css';
 
 const Reservations = ({ reservations }) => {
@@ -8,9 +8,10 @@ const Reservations = ({ reservations }) => {
     return (
       <Card
       name= {reservation.name}
-      key= {reservation.id}
       date= {reservation.date}
+      time= {reservation.time}
       guests={reservation.number}
+      key= {reservation.id}
       />
     )
   })
