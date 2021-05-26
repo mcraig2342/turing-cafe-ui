@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { getReservations } from '../../api-calls'
+import { getReservations } from '../../api-calls';
 
 class App extends Component {
   constructor() {
@@ -19,7 +19,6 @@ class App extends Component {
     .catch(error => this.setState({ error: 'Something went wrong!'}))
   }
 
-  }
 
   render() {
     return (
